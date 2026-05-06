@@ -3,199 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="2;url=https://teckro.com/patient-end-user-privacy-statement">
-  <link rel="canonical" href="https://teckro.com/patient-end-user-privacy-statement">
-  <title>Redirecting to Privacy Statement — Teckro</title>
-  <meta name="description" content="Redirecting to Teckro Patient End User Privacy Statement.">
-  <meta name="theme-color" content="#041623" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f9fcff" media="(prefers-color-scheme: light)">
+  <title>Privacy Statement — Solas by Teckro</title>
+  <meta name="description" content="Patient End User Privacy Statement for the Solas by Teckro patient platform application.">
+  <meta name="theme-color" content="#0a1628">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/webp" href="../icon.webp">
   <link rel="apple-touch-icon" href="../icon.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #f9fcff;
-      --bg-card: #ffffff;
-      --bg-card-border: rgba(227, 233, 239, 0.6);
-      --text-primary: #1a3344;
-      --text-secondary: #5e7487;
-      --text-tertiary: #93a3b1;
-      --border: #e3e9ef;
-      --orange: #F07931;
-      --orange-subtle: rgba(240, 121, 49, 0.08);
-      --shadow-card: 0 1px 3px rgba(4, 22, 35, 0.04), 0 8px 32px rgba(4, 22, 35, 0.06);
-      --gradient-bg: radial-gradient(ellipse at 50% 0%, rgba(240, 121, 49, 0.04) 0%, transparent 60%);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #020e18;
-        --bg-card: rgba(26, 51, 68, 0.5);
-        --bg-card-border: rgba(47, 92, 123, 0.3);
-        --text-primary: #f3f6f9;
-        --text-secondary: #8abbdc;
-        --text-tertiary: #5e7487;
-        --border: rgba(47, 92, 123, 0.4);
-        --orange-subtle: rgba(240, 121, 49, 0.06);
-        --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.2), 0 8px 32px rgba(0, 0, 0, 0.3);
-        --gradient-bg: radial-gradient(ellipse at 50% 0%, rgba(240, 121, 49, 0.06) 0%, transparent 60%);
-      }
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg);
-      color: var(--text-primary);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background: var(--gradient-bg);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .card {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      padding: 3rem 2.5rem;
-      max-width: 400px;
-      width: 100%;
-      margin: 1rem;
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      border-radius: 1.25rem;
-      box-shadow: var(--shadow-card);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
-    }
-
-    .logo {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 1.75rem;
-      border-radius: 1.25rem;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(240, 121, 49, 0.15), 0 0 0 1px rgba(240, 121, 49, 0.08);
-      animation: logoEntry 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
-    }
-
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    h1 {
-      font-size: 1.375rem;
-      font-weight: 700;
-      margin-bottom: 0.375rem;
-      color: var(--text-primary);
-      letter-spacing: -0.01em;
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
-    }
-
-    .subtitle {
-      color: var(--text-secondary);
-      margin-bottom: 2rem;
-      font-size: 0.875rem;
-      font-weight: 400;
-      line-height: 1.6;
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
-    }
-
-    .spinner-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      padding: 0.875rem 1.25rem;
-      background: var(--orange-subtle);
-      border-radius: 0.75rem;
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
-    }
-
-    .spinner {
-      width: 18px;
-      height: 18px;
-      border: 2px solid var(--border);
-      border-top-color: var(--orange);
-      border-radius: 50%;
-      animation: spin 0.75s linear infinite;
-    }
-
-    .spinner-text {
-      color: var(--text-secondary);
-      font-size: 0.8125rem;
-      font-weight: 500;
-    }
-
-    .footer {
-      margin-top: 1.5rem;
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
-    }
-
-    .footer a {
-      color: var(--text-tertiary);
-      font-size: 0.6875rem;
-      font-weight: 400;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      color: var(--orange);
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes logoEntry {
-      from { opacity: 0; transform: scale(0.8); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../legal.css">
 </head>
 <body>
-  <div class="card">
-    <div class="logo">
-      <img src="../icon.webp" alt="Teckro" width="80" height="80">
+  <nav class="nav">
+    <a href="../" class="nav-brand">
+      <img src="../icon.webp" alt="Solas" width="32" height="32">
+      <span>Solas by Teckro</span>
+    </a>
+    <div class="nav-links">
+      <a href="../terms">Terms</a>
+      <a href="../privacy" class="active">Privacy</a>
     </div>
+  </nav>
 
-    <h1>Privacy Statement</h1>
-    <p class="subtitle">Redirecting you to Teckro Privacy Statement…</p>
-
-    <div class="spinner-wrap">
-      <div class="spinner"></div>
-      <span class="spinner-text">Redirecting…</span>
-    </div>
-
-    <div class="footer">
-      <a href="https://teckro.com/patient-end-user-privacy-statement">Click here if not redirected</a>
-    </div>
+  <div class="hero">
+    <h1>Patient End User Privacy Statement</h1>
+    <p class="meta">Solas by Teckro Patient Platform Application</p>
   </div>
 
-  <script>window.location.replace("https://teckro.com/patient-end-user-privacy-statement");</script>
+  <hr class="divider">
+
+  <div class="content">
+    <p>Solas by Teckro is a patient platform application (hereinafter referred to as the "Application") which is owned and controlled by Teckro Limited.</p>
+
+    <p>As a data processor, Teckro is committed to protecting your privacy and this Privacy Statement explains the personal data processes, how Teckro processes it and for what purposes.</p>
+
+    <p>Unlike data controllers, data processors have a different set of responsibilities under data protection law, in particular:</p>
+
+    <ul>
+      <li>Teckro processes personal data on the instructions of the data controller</li>
+      <li>Teckro has written agreements in place with the data controllers</li>
+      <li>Teckro takes appropriate steps to ensure that personal data is secure from unauthorized access, disclosure, destruction or accidental loss</li>
+    </ul>
+
+    <h2>What legal basis do we have for processing of your personal data?</h2>
+
+    <p>We process personal information for certain legitimate business purposes, which include some or all of the following:</p>
+
+    <ul>
+      <li>For the provision of the user account</li>
+      <li>Where the processing enables us to enhance, modify, personalize or otherwise improve our services / communications for the benefit of the end users</li>
+      <li>To better understand how people interact with our application</li>
+    </ul>
+
+    <p>Whenever we process data for these purposes, we will ensure that we will always keep your Personal Data rights in high regard and take account of these rights. You have the right to object to this processing if you wish, and if you wish to do so, please contact us at <a href="mailto:data-privacy@teckro.com">data-privacy@teckro.com</a>. Please bear in mind that if you object, this may affect our ability to carry out tasks as detailed above for your benefit.</p>
+
+    <h2>What information do we process?</h2>
+
+    <p>Your screening ID number is provided to Solas by Teckro directly by the data controller. To create your patient account, Solas by Teckro generates your unique Solas Patient I.D. This will be your future username for your Solas by Teckro account. There is no personal data required to create your account.</p>
+
+    <p>For security and performance monitoring purposes, Solas by Teckro logs the following personal data for a minimal duration of time:</p>
+
+    <ul>
+      <li>IP address</li>
+    </ul>
+
+    <p>In the provision of additional feature support, and at the request of the data controller, Teckro may also process the following personal data:</p>
+
+    <ul>
+      <li>Email address associated with the account</li>
+      <li>Patient medical data captured during participation in a clinical trial</li>
+    </ul>
+
+    <p>Other types of non-personal data processed are:</p>
+
+    <ul>
+      <li>Study name</li>
+      <li>Study number</li>
+      <li>Site institution details: name, site number, site address, city, country</li>
+      <li>Therapeutic area under study review</li>
+    </ul>
+
+    <p>At the discretion of the data controller, authorized users may 'invite' person(s) involved in a trial to register for Solas by Teckro access, by providing the patient's screening I.D number to Solas by Teckro.</p>
+
+    <p>In addition, to better understand how users interact with our application Teckro also tracks your device details, freely available to third party mobile apps, including:</p>
+
+    <ul>
+      <li><strong>Manufacturer</strong> e.g., Samsung, Apple</li>
+      <li><strong>Model</strong> e.g., iPhone, Galaxy</li>
+      <li><strong>Platform</strong> e.g., Android, iOS, Version</li>
+    </ul>
+
+    <h2>How do we use your information?</h2>
+
+    <p>The information provided to Solas by Teckro by the authorized 'inviter' enables your registration within our application. This information is then retained to enable future use of your Solas by Teckro account.</p>
+
+    <p>In accordance with its agreement with the relevant data controller, Teckro may also monitor usage patterns on an aggregated / depersonalized basis, which enables us to improve the service we provide to our clients and the end user.</p>
+
+    <h2>Do we share your information?</h2>
+
+    <p>In accordance with its agreement with the relevant data controller, Teckro may use information internally in aggregate (so that no individuals are identified) for marketing, strategic development and reporting purposes.</p>
+
+    <p>Teckro may also use third party service providers to help us provide elements of our application. Your personal data i.e. IP address may be processed by a third-party service provider. For more information regarding our sub-processors please refer to our sub-processor list which is available at <a href="https://teckro.com/gdpr-subprocessors">teckro.com/gdpr-subprocessors</a>.</p>
+
+    <p>However, Teckro will not pass your personal data to a third party service providers, other than described in this Privacy Statement, unless for (a) any successors-in-title to our business; or (b) where such disclosure is required by law.</p>
+
+    <h2>Where do we store your information?</h2>
+
+    <p>Data is stored on servers located inside the European Economic Area. By using the Teckro solution you acknowledge that the laws, regulations, and standards of the country in which your information is stored or processed or accessed may be different from those of your own country. However, Teckro has taken steps to ensure that all locations provide a level of security and protection for personal data that meets EU laws.</p>
+
+    <h2>How do we keep your personal information secure?</h2>
+
+    <p>The personal data which Teckro processes is held on secure servers and appropriate steps are taken (both technical and organizational security measures) to protect your personal data in line with applicable law.</p>
+
+    <h2>How long do we keep personal information?</h2>
+
+    <p>Teckro keeps personal data in accordance with our agreement with the data controller and applicable law.</p>
+
+    <h2>Links</h2>
+
+    <p>The Teckro solution may contain links to other websites if requested by a client. Teckro holds no responsibility whatsoever for the security or data privacy measures within an external site. To this end Teckro is not responsible for any liability, of any kind, that may arise in connection with or as a result of the use of the external site in question. However, to alert you to the fact that you may be about to navigate to an external website, Teckro provides a pop-up alert within the application whenever you click on an external link.</p>
+
+    <h2>Location Services</h2>
+
+    <p>Teckro does not use location services and does not track your GPS position.</p>
+
+    <h2>What are your rights?</h2>
+
+    <p>You enjoy a number of rights under data protection law. These rights are exercisable against the controller, rather than Teckro. However, as a processor Teckro is responsible for assisting the controller when you make a request to exercise your rights.</p>
+
+    <p>The exact rights which are available to you may vary depending upon the legal basis relied upon by the controller to process your information.</p>
+
+    <p>You have the right to request information about how your information is being used. You also have the right to request a copy of the information that Teckro has about you, request its correction, or request its erasure.</p>
+
+    <p>If you would like to exercise your statutory data protection rights, please contact Teckro at <a href="mailto:data-privacy@teckro.com">data-privacy@teckro.com</a> and we can facilitate by referring your request to your data controller.</p>
+
+    <h2>Will we update this policy?</h2>
+
+    <p>Our Privacy Policy Statement may change from time to time and all updates will be posted within the application.</p>
+
+    <h2>Contact information</h2>
+
+    <p>If you have further queries with regard to how Teckro processes your personal data, please contact us at <a href="mailto:data-privacy@teckro.com">data-privacy@teckro.com</a>.</p>
+  </div>
+
+  <footer class="page-footer">
+    <span>Teckro Limited</span>
+    <a href="../terms">Terms of Service</a>
+  </footer>
 </body>
 </html>

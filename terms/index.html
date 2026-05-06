@@ -3,199 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="2;url=https://teckro.com/terms">
-  <link rel="canonical" href="https://teckro.com/terms">
-  <title>Redirecting to Terms — Teckro</title>
-  <meta name="description" content="Redirecting to Teckro Terms and Conditions.">
-  <meta name="theme-color" content="#041623" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#f9fcff" media="(prefers-color-scheme: light)">
+  <title>Terms of Service — Solas by Teckro</title>
+  <meta name="description" content="Terms of Service for the Solas by Teckro patient platform application.">
+  <meta name="theme-color" content="#0a1628">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/webp" href="../icon.webp">
   <link rel="apple-touch-icon" href="../icon.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #f9fcff;
-      --bg-card: #ffffff;
-      --bg-card-border: rgba(227, 233, 239, 0.6);
-      --text-primary: #1a3344;
-      --text-secondary: #5e7487;
-      --text-tertiary: #93a3b1;
-      --border: #e3e9ef;
-      --orange: #F07931;
-      --orange-subtle: rgba(240, 121, 49, 0.08);
-      --shadow-card: 0 1px 3px rgba(4, 22, 35, 0.04), 0 8px 32px rgba(4, 22, 35, 0.06);
-      --gradient-bg: radial-gradient(ellipse at 50% 0%, rgba(240, 121, 49, 0.04) 0%, transparent 60%);
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #020e18;
-        --bg-card: rgba(26, 51, 68, 0.5);
-        --bg-card-border: rgba(47, 92, 123, 0.3);
-        --text-primary: #f3f6f9;
-        --text-secondary: #8abbdc;
-        --text-tertiary: #5e7487;
-        --border: rgba(47, 92, 123, 0.4);
-        --orange-subtle: rgba(240, 121, 49, 0.06);
-        --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.2), 0 8px 32px rgba(0, 0, 0, 0.3);
-        --gradient-bg: radial-gradient(ellipse at 50% 0%, rgba(240, 121, 49, 0.06) 0%, transparent 60%);
-      }
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--bg);
-      color: var(--text-primary);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background: var(--gradient-bg);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .card {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      padding: 3rem 2.5rem;
-      max-width: 400px;
-      width: 100%;
-      margin: 1rem;
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      border-radius: 1.25rem;
-      box-shadow: var(--shadow-card);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
-    }
-
-    .logo {
-      width: 80px;
-      height: 80px;
-      margin: 0 auto 1.75rem;
-      border-radius: 1.25rem;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(240, 121, 49, 0.15), 0 0 0 1px rgba(240, 121, 49, 0.08);
-      animation: logoEntry 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
-    }
-
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    h1 {
-      font-size: 1.375rem;
-      font-weight: 700;
-      margin-bottom: 0.375rem;
-      color: var(--text-primary);
-      letter-spacing: -0.01em;
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
-    }
-
-    .subtitle {
-      color: var(--text-secondary);
-      margin-bottom: 2rem;
-      font-size: 0.875rem;
-      font-weight: 400;
-      line-height: 1.6;
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
-    }
-
-    .spinner-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      padding: 0.875rem 1.25rem;
-      background: var(--orange-subtle);
-      border-radius: 0.75rem;
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
-    }
-
-    .spinner {
-      width: 18px;
-      height: 18px;
-      border: 2px solid var(--border);
-      border-top-color: var(--orange);
-      border-radius: 50%;
-      animation: spin 0.75s linear infinite;
-    }
-
-    .spinner-text {
-      color: var(--text-secondary);
-      font-size: 0.8125rem;
-      font-weight: 500;
-    }
-
-    .footer {
-      margin-top: 1.5rem;
-      animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
-    }
-
-    .footer a {
-      color: var(--text-tertiary);
-      font-size: 0.6875rem;
-      font-weight: 400;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      color: var(--orange);
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes logoEntry {
-      from { opacity: 0; transform: scale(0.8); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../legal.css">
 </head>
 <body>
-  <div class="card">
-    <div class="logo">
-      <img src="../icon.webp" alt="Teckro" width="80" height="80">
+  <nav class="nav">
+    <a href="../" class="nav-brand">
+      <img src="../icon.webp" alt="Solas" width="32" height="32">
+      <span>Solas by Teckro</span>
+    </a>
+    <div class="nav-links">
+      <a href="../terms" class="active">Terms</a>
+      <a href="../privacy">Privacy</a>
     </div>
+  </nav>
 
-    <h1>Terms & Conditions</h1>
-    <p class="subtitle">Redirecting you to Teckro Terms…</p>
-
-    <div class="spinner-wrap">
-      <div class="spinner"></div>
-      <span class="spinner-text">Redirecting…</span>
-    </div>
-
-    <div class="footer">
-      <a href="https://teckro.com/terms">Click here if not redirected</a>
-    </div>
+  <div class="hero">
+    <h1>Terms of Service</h1>
+    <p class="meta">Solas by Teckro Patient Platform Application</p>
   </div>
 
-  <script>window.location.replace("https://teckro.com/terms");</script>
+  <hr class="divider">
+
+  <div class="content">
+    <p>Solas by Teckro is a patient platform application (hereinafter referred to as the "Application") which is owned and controlled by Teckro Limited, a limited liability company incorporated under the laws of Ireland with its registered office at the Bank Building, 63 O'Connell Street, Limerick, Ireland (hereinafter referred to as "Teckro" or "we/us/our").</p>
+
+    <h2>A: General Terms</h2>
+
+    <h2>Use of Application</h2>
+
+    <p>Access to this Application, and the use of the information contained on it, are governed by the terms and conditions set out below (the "Terms"). The Terms are important and are for the protection of both the user ("you") and us. Your use of this Application signifies your agreement to these Terms. If you breach any of these Terms, your right to use this Application terminates automatically. You agree that by downloading or using the Application you are entering into a legally binding agreement with us. If you do not agree to these Terms, do not download or use this Application.</p>
+
+    <p>The Solas by Teckro Privacy Statement (available at <a href="../privacy">solas.teckro.com/privacy</a>) explains how we treat your personal data and how we protect your privacy when you use the Application.</p>
+
+    <p>By using the Application, you represent, acknowledge and agree that you are at least 18 years of age, or if you are under 18 years of age (a "Minor") that you are using the Application with the consent of your parent or legal guardian. If you are the parent or legal guardian of the Minor, you hereby agree to bind the Minor to these Terms, to supervise the Minor while using the Application, and to fully indemnify and hold harmless Teckro if the Minor breaches any of these Terms. If you are not at least 18 years old or do not have the consent of your parent or legal guardian, you may not use the Application at any time or in any manner or submit any information to the Application.</p>
+
+    <h2>Prohibited Conduct</h2>
+
+    <p>You are liable for any abuse, neglect, misuse, unauthorized modification or interference with the Application, to the extent permissible under applicable law.</p>
+
+    <p>The user will restrain from capturing, downloading, saving, uploading, modifying, printing, or otherwise retaining information and content available on the Application, other than for the purposes of using the tools available on the Application.</p>
+
+    <p>The user will ensure that no Sponsor ("Sponsor" refers to an individual, company, institution, or organization that takes responsibility for the initiation, management, and/or financing of a clinical study) content or confidential information is downloaded, modified, uploaded or otherwise disseminated without the express authorization of the Sponsor.</p>
+
+    <p>The Application is configured solely to support the user in relation to the relevant clinical study on behalf of the Sponsor. You are hereby notified that we monitor the Application to ensure that it is being used correctly and solely for purposes related to the relevant clinical study. You expressly agree to ensure that access to your device is password protected; and to refrain from doing, either personally or through an agent, any of the following (together, "Prohibited Conduct"):</p>
+
+    <ul>
+      <li>Permitting or providing others with access to the Application using your username and password or otherwise, or the name and password of another authorized user;</li>
+      <li>Copying, modifying, reverse engineering, disassembling, re-distributing, re-publishing, altering, creating derivative works from, assigning, licensing, transferring or adapting any of the software, information (including study-specific information captured via the Application), text, graphics, source code or HTML code, or other content available on the Application;</li>
+      <li>Removing or modifying any copyright, trademark, legal notice, or other proprietary notation from the content available on the Application;</li>
+      <li>Transferring the Application content to another person, "frame," "mirror," "in-line link," or employing similar navigational technology to the Application content;</li>
+      <li>Violating or attempting to violate our security mechanisms, including but not limited to accessing any data or server that you are not authorized to access or otherwise breaching the security of the Application or corrupting the Application in any way;</li>
+      <li>Engaging in any conduct which violates the Copyright and Related Rights Act 2000, as amended, or other applicable laws, rules, and regulations;</li>
+      <li>Using the Application to violate a third party's intellectual property, personality, publicity or confidentiality rights, uploading, downloading, displaying, publishing, performing, creating derivative works from, transmitting, modifying, reproducing, or otherwise distributing information or content in violation of a third party's intellectual property rights;</li>
+      <li>Misrepresenting your identity or personal information when accessing the Application;</li>
+      <li>Advertising or otherwise soliciting funds, goods or services on the Application; or</li>
+      <li>Providing any commercial hosting service with access to the Application and/or the content on the Application.</li>
+    </ul>
+
+    <p>To ensure that users of the Application do not engage in Prohibited Conduct, we reserve the right to monitor the use of the Application and to revoke or deny access to the Application for any person or entity whose use of the Application suggests Prohibited Conduct.</p>
+
+    <p>Access of the materials available within the Application beyond that of normal patterns of use that suggests systematic copying of the Application materials constitutes an abuse of the Application and will result in revocation or denial of access to the Application. The terms "normal patterns" and "abuse" shall be determined solely by us.</p>
+
+    <h2>Disclaimer and Exclusion of Liability</h2>
+
+    <p>We have provided the information on the Application in good faith. Although we have made all reasonable efforts to ensure that the information presented on the Application is accurate at the time of inclusion, we do not represent or warrant that this is the case and it should not be relied upon as such. We reserve the right, in our sole discretion, to change, modify, or discontinue any aspect or feature of this Application in whole or in part, including and without limitation the content, availability, access and/or the Terms of this Application.</p>
+
+    <p>Access to and use of this Application is done at your own risk and we do not represent or warrant that the use of this Application or any material downloaded from it will not cause damage to property, including but not limited to the loss of the Application. We shall not, in any circumstances, be liable for any loss of profits, data, business, revenue, goodwill or anticipated savings, interruption of business, or for any direct, special, indirect, consequential, or economic loss, howsoever caused, arising out of or in connection with the access, use, or performance of the Application to the maximum extent permissible by applicable law.</p>
+
+    <p>While reasonable care has been taken in the preparation of the contents of this Application, the Application and its contents are provided on an "as is" basis. We do not warrant accuracy, completeness, or usefulness of any information contained in this Application. All warranties (whether Statutory or implied) are hereby expressly excluded to the fullest extent permitted by law, including fitness for purpose, satisfactory quality, and timely delivery.</p>
+
+    <p>We do not make any representation or give any warranty or undertaking that the functions of the Application will meet your requirements. In no event shall we be liable for any damages whatsoever arising out of the installation or use of any third-party software used to view the Application. You assume responsibility for using the Application and related content to achieve your intended results for the use of, and results obtained from, the Application. You are solely responsible for ensuring that you have sufficient and compatible hardware, software, telecommunications equipment, and internet service necessary for the use of the Application.</p>
+
+    <p>The Application may hold links to external websites. When you click on one of these links a symbol will appear indicating that you are leaving the Application and will be navigated to your browser/tab to indicate that you are leaving the Application. By clicking on one of these links you are navigating to an external website that is not provided or endorsed by Teckro. We are not responsible for the external website's content, such external websites may have their own legal terms and conditions and privacy policies that may apply to you. Teckro holds no responsibility whatsoever for any of the content, material, practices, security measures or data privacy measures with the external site that you are about to navigate to. To that end, Teckro is not responsible for any loss or damage, of any kind, that may arise in connection with, or as a result of, your use of the external site in question and you agree that we have no liability or responsibility arising from your use of the external site.</p>
+
+    <h2>Copyrights and Trademarks</h2>
+
+    <p>Teckro owns and operates this Application and, unless stated otherwise, all information and rights belong to us or our licensors and are protected by copyright, trademark or other intellectual property laws. We reserve all intellectual property rights in this Application.</p>
+
+    <p>Reproduction of part or all of the content of the pages of this Application, except to the extent necessary for the reasonable use of the Application, in any form is prohibited.</p>
+
+    <p>No part of this Application may be reproduced on, transmitted to, or stored in any device or other form of electronic retrieval system, except to the extent necessary for the reasonable use of the Application.</p>
+
+    <h2>General Access to the Application</h2>
+
+    <p>We will use commercially reasonable efforts to provide uninterrupted access to the Application. However, you may occasionally be unable to access the Application due to conditions beyond our control. Such conditions include but are not limited to force majeure, acts of God, power outages, and the acts of computer hackers or others acting outside the law. Also access may occasionally be unavailable due to events such as software issues, server downtime, increased internet traffic or downtime, programming errors, regular maintenance of the system, or other related reasons.</p>
+
+    <p>In response to any unavailability of the Application, we will use commercially reasonable steps to restore access within a reasonable period of time. The term "commercially reasonable" means reasonable efforts taken in good faith without an unduly or burdensome expenditure of time, resources, personnel, or money. If the Application is unavailable for an extended period of time, Teckro will notify users.</p>
+
+    <h2>Fair Use When Operating and Using This Application and Services</h2>
+
+    <p>Where, in our sole opinion, we believe that there has been any unreasonable usage, suspicious activity, transfer or sharing of usernames or passwords, unauthorized access to information on the Application, or any other breach of these Terms, we will investigate the matter and our investigation may lead to suspension and/or de-activation of any registered account. We reserve the right to immediately withdraw service in order to protect the integrity, ongoing operation, and normal delivery of the Application.</p>
+
+    <h2>Amendments to Terms and Conditions</h2>
+
+    <p>We reserve the right to change these Terms at any time. It is your responsibility to review these Terms on a regular basis to ensure that you are aware of the latest Terms. If you use this Application after changes have been posted, it will be deemed that you have accepted the amended Terms.</p>
+
+    <h2>Severability</h2>
+
+    <p>If any provision of these Terms is or becomes illegal, invalid, or unenforceable, that shall not affect the legality, validity or enforceability, or any other provision of these Terms.</p>
+
+    <h2>No Waiver</h2>
+
+    <p>If we fail to insist upon strict performance of any of your obligations under these Terms, or if we fail to exercise any of the rights or remedies to which we are entitled under these Terms, this shall not constitute a waiver of such rights or remedies and shall not relieve you from compliance with such obligations. A waiver by us of any default shall not constitute a waiver of any subsequent default. No waiver by us of any of these Terms shall be effective unless it is expressly stated to be a waiver and is communicated to you in writing.</p>
+
+    <h2>Law</h2>
+
+    <p>Teckro Limited is established in Ireland in accordance with the laws of Ireland and these Terms and your use of the Application will be exclusively governed by the laws of Ireland, without regard to conflict of law principles. If any claim or dispute from your use of the Application or any of the information on the Application, including as to the validity of these Terms, you agree that the Irish Courts will have exclusive jurisdiction over all such claims or disputes.</p>
+  </div>
+
+  <footer class="page-footer">
+    <span>Teckro Limited</span>
+    <a href="../privacy">Privacy Policy</a>
+  </footer>
 </body>
 </html>
