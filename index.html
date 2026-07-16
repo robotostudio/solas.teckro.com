@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Device redirect: runs before render for an instant store bounce on mobile -->
+  <script src="./redirect.js"></script>
+
   <title>Solas by Teckro</title>
   <meta name="description" content="Download the Solas app for iOS or Android. Instant access to clinical trial information at your fingertips.">
   <meta name="theme-color" content="#041623" media="(prefers-color-scheme: dark)">
@@ -17,16 +21,6 @@
   <!-- Favicon -->
   <link rel="icon" type="image/webp" href="./icon.webp">
   <link rel="apple-touch-icon" href="./icon.webp">
-
-  <script>
-    var APPLE_URL = "https://apps.apple.com/us/app/teckro/id6749154491";
-    var GOOGLE_URL = "https://play.google.com/store/apps/details?id=com.teckro.patient";
-    (function() {
-      var ua = navigator.userAgent || navigator.vendor || window.opera;
-      if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) window.location.replace(APPLE_URL);
-      else if (/android/i.test(ua)) window.location.replace(GOOGLE_URL);
-    })();
-  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -354,12 +348,6 @@
     </div>
   </div>
 
-  <script>
-    document.getElementById("link-apple").href = APPLE_URL;
-    document.getElementById("link-google").href = GOOGLE_URL;
-    document.getElementById("spinner").style.display = "none";
-    document.getElementById("message").textContent = "Available on iOS and Android.";
-    document.getElementById("store-links").classList.add("visible");
-  </script>
+  <script src="./store-links.js"></script>
 </body>
 </html>
